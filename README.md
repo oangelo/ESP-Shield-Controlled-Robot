@@ -34,3 +34,8 @@
 ## Console 
 
 * Build and upload the sketch using the following command: `arduino --upload robot.ino --port /dev/ttyUSB*`
+
+## References
+
+* [Make Wi-Fi Controller Car Using Esp8266](https://www.hackster.io/diyprojectslab/make-wi-fi-controller-car-using-esp8266-297e49)
+* (Simplest Wifi Car Using ESP8266 Motorshield)[https://www.instructables.com/Simplest-Wifi-Car-Using-ESP8266-Motorshield/]
