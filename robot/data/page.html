@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Controle de robô</title>
+    <style>
+      td {
+        text-align: center;
+        padding: 10px;
+      }
+		body {
+			font-family: Arial;
+			background-color: #ffffff;
+      align: center;
+      text-align: center;
+		}
+    table{
+    text-align: center;
+    margin: 0 auto;
+    }
+		.btn {
+			border: none;
+			color: white;
+			padding: 16px 32px;
+			text-align: center;
+			font-size: 24px;
+			margin: 4px 2px;
+			opacity: 0.6;
+			transition: 0.3s;
+			display: inline-block;
+			text-decoration: none;
+			cursor: pointer;
+			border-radius: 50%;
+			background-color: #4CAF50;
+		}
+		.btn:hover {opacity: 1}
+		.btn-stop {
+			background-color: #f44336;
+		}
+		.btn-arrow {
+			height: 50px;
+			width: 50px;
+			line-height: 50px;
+			text-align: center;
+			font-size: 36px;
+			display: inline-block;
+			border-radius: 50%;
+		}
+		.btn-arrow-left {
+			float: left;
+			margin-right: 40px;
+		}
+		.btn-arrow-right {
+			float: right;
+			margin-left: 40px;
+		}
+		.btn-arrow-up {
+			margin-bottom: 40px;
+		}
+		.btn-arrow-down {
+			margin-top: 40px;
+		}
+		.btn-arrow-up-left {
+			float: left;
+			margin-right: 40px;
+			margin-bottom: 40px;
+		}
+		.btn-arrow-up-right {
+			float: right;
+			margin-left: 40px;
+			margin-bottom: 40px;
+		}
+		.btn-arrow-down-left {
+			float: left;
+			margin-right: 40px;
+			margin-top: 40px;
+		}
+		.btn-arrow-down-right {
+			float: right;
+			margin-left: 40px;
+			margin-top: 40px;
+		}
+	</style>
+  </head>
+  <body>
+    <h1>Controle de robô</h1>
+    <table>
+      <tr>
+        <td><a class="btn btn-arrow btn-arrow-up-left" href="?State=G" >↖️</a></td>
+        <td><a class="btn btn-arrow btn-arrow-up" href="?State=F">⬆️</a></td>
+        <td><a class="btn btn-arrow btn-arrow-up-right" href="?State=I">↗️</a></td>
+      </tr>
+      <tr>
+        <td><a class="btn btn-arrow btn-arrow-left" href="?State=L">⬅️</a></td>
+        <td><a class="btn btn-stop" href="?State=S">⏹️</a></td>
+        <td><a class="btn btn-arrow btn-arrow-right" href="?State=R">➡️</a></td>
+      </tr>
+      <tr>
+        <td><a class="btn btn-arrow btn-arrow-down-left" href="?State=H">↙️</a></td>
+        <td><a class="btn btn-arrow btn-arrow-down" href="?State=B">⬇️</a></td>
+        <td><a class="btn btn-arrow btn-arrow-down-right" href="?State=J">↘️</a></td>
+      </tr>
+    </table>
+    <script>
+    // Função para enviar o comando para o ESP8266
+    function sendCommand(command) {
+      var xhr = new XMLHttpRequest();
+      xhr.open("GET", "/?command=" + command, true);
+      xhr.send();
+    }
+    </script>
+  </body>
+</html>
+
