@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>Controle de robô</title>
+    <title>Robot Controller</title>
     <style>
       td {
         text-align: center;
@@ -83,7 +83,7 @@
 	</style>
   </head>
   <body>
-    <h1>Controle de robô</h1>
+    <h1>Robot Controller</h1>
     <table>
       <tr>
         <td><a class="btn btn-arrow btn-arrow-up-left" href="?State=G" >↖️</a></td>
@@ -101,14 +101,6 @@
         <td><a class="btn btn-arrow btn-arrow-down-right" href="?State=J">↘️</a></td>
       </tr>
     </table>
-    <script>
-    // Função para enviar o comando para o ESP8266
-    function sendCommand(command) {
-      var xhr = new XMLHttpRequest();
-      xhr.open("GET", "/?command=" + command, true);
-      xhr.send();
-    }
-    </script>
   </body>
 </html>
 
