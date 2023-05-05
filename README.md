@@ -3,7 +3,7 @@
 ## Bill of Materials (BOM)
 
 * NodeMCU (ESP8266)
-* ESP motor shield
+* ESP motor shield ![ESP motor shield](img/motor_shield.jpg)
 * Robot structure with at least one DC motor on each side
 * Batteries and battery holder to power the shield
 
