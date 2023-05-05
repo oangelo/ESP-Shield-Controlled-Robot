@@ -33,6 +33,8 @@ This project is designed for a simple robot, which utilizes the ESP motor shield
 * Open the URL http://192.168.4.1 on a browser
 * Use the buttons on the web page to control the robot
 
+    ![control page] (img/page.png)
+
 ## Console 
 
 * Build and upload the sketch using the following command: `arduino --upload robot.ino --port /dev/ttyUSB*`
