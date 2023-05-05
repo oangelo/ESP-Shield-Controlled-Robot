@@ -2,10 +2,10 @@
 
 ## Bill of Materials (BOM)
 
-* NodeMCU (ESP8266)
+* NodeMCU (ESP8266) ![4Wd Smart Car Chassis](img/nodemcu.jpeg)
 * ESP motor shield ![ESP motor shield](img/motor_shield.jpg)
-* Robot structure with at least one DC motor on each side
-* Batteries and battery holder to power the shield
+* Robot structure with at least one DC motor on each side ![4Wd Smart Car Chassis](img/4wd_car_chassis.jpg)
+* Batteries and battery holder to power the shield ![Battery holder](img/battery_holder.jpeg)
 
 ## Installation (linux)
 
