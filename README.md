@@ -9,7 +9,7 @@
 
 ## Installation (linux)
 
-* clone this repo ~~~bash clone https://github.com/oangelo/ESP-Shield-Controlled-Robot.git~~~ 
+* clone this ˋˋˋrepo bash clone https://github.com/oangelo/ESP-Shield-Controlled-Robot.gitˋˋˋ
 * [Install the ESP8266 board on Arduino IDE](https://github.com/esp8266/Arduino)
 * Use [ESP8266fs](https://github.com/esp8266/arduino-esp8266fs-plugin) to upload the HTML file located inside the "robot/data" folder to the ESP. Please refer to the manual of ESP8266fs for instructions.
 
