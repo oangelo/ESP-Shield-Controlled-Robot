@@ -1,5 +1,7 @@
 # ESP-Shield-Controlled-Robot
 
+This project is designed for a simple robot, which utilizes the ESP motor shield to control multiple motors. While researching existing codes online, I found that many were dependent on the internet, external WiFi and an Android app. However, in this project, the ESP generates its own WiFi network that users can connect to, and provides a website for users to control the robot. The best part is that no external devices are needed!
+
 ## Bill of Materials (BOM)
 
 * NodeMCU (ESP8266) 
