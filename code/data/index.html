@@ -81,24 +81,30 @@
 			margin-top: 40px;
 		}
 	</style>
+  <script>
+    function state(command){
+      fetch("/control?State="+command, { method: 'GET' });
+      console.log("State="+command);
+    }
+  </script>
   </head>
-  <body>
+  <body ontouchend="state('S')" onmouseup="state('S')">
     <h1>Robot Controller</h1>
     <table>
       <tr>
-        <td><a class="btn btn-arrow btn-arrow-up-left" href="?State=G" >↖️</a></td>
-        <td><a class="btn btn-arrow btn-arrow-up" href="?State=F">⬆️</a></td>
-        <td><a class="btn btn-arrow btn-arrow-up-right" href="?State=I">↗️</a></td>
+        <td><a class="btn btn-arrow btn-arrow-up-left"  onmousedown="state('G')" ontouchstart="state('G')"  >↖️</a></td>
+        <td><a class="btn btn-arrow btn-arrow-up"       onmousedown="state('F')" ontouchstart="state('F')" >⬆️</a></td>
+        <td><a class="btn btn-arrow btn-arrow-up-right" onmousedown="state('I')" ontouchstart="state('I')" >↗️</a></td>
       </tr>
       <tr>
-        <td><a class="btn btn-arrow btn-arrow-left" href="?State=L">⬅️</a></td>
-        <td><a class="btn btn-stop" href="?State=S">⏹️</a></td>
-        <td><a class="btn btn-arrow btn-arrow-right" href="?State=R">➡️</a></td>
+        <td><a class="btn btn-arrow btn-arrow-left"  onmousedown="state('L')" ontouchstart="state('L')">⬅️</a></td>
+        <td><a class="btn btn-stop"                  onmousedown="state('S')" ontouchstart="state('S')">⏹️</a></td>
+        <td><a class="btn btn-arrow btn-arrow-right" onmousedown="state('R')" ontouchstart="state('R')">➡️</a></td>
       </tr>
       <tr>
-        <td><a class="btn btn-arrow btn-arrow-down-left" href="?State=H">↙️</a></td>
-        <td><a class="btn btn-arrow btn-arrow-down" href="?State=B">⬇️</a></td>
-        <td><a class="btn btn-arrow btn-arrow-down-right" href="?State=J">↘️</a></td>
+        <td><a class="btn btn-arrow btn-arrow-down-left"  onmousedown="state('H')" ontouchstart="state('H')" >↙️</a></td>
+        <td><a class="btn btn-arrow btn-arrow-down"       onmousedown="state('B')" ontouchstart="state('B')" >⬇️</a></td>
+        <td><a class="btn btn-arrow btn-arrow-down-right" onmousedown="state('J')" ontouchstart="state('J')" >↘️</a></td>
       </tr>
     </table>
   </body>
