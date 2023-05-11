@@ -4,9 +4,18 @@
 #define LeftMotorSpeed  4
 #define LeftMotorDir    2
 
-#include <ESP8266WiFi.h>
+#if defined(ESP32)
+  #include <WiFi.h>
+  #include <WebServer.h>
+  #define DEVICE "ESP32"
+#elif defined(ESP8266)
+  #include <ESP8266WiFi.h>
+  #include <ESP8266WebServer.h>
+  #define DEVICE "ESP8266"
+
+#endif
+
 #include <WiFiClient.h> 
-#include <ESP8266WebServer.h>
 
 String command;             //String to store app command state.
 int speedCar = 800;         // 400 - 1023.
